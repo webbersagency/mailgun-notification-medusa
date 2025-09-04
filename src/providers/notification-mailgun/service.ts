@@ -10,8 +10,6 @@ import {
 import formData from "form-data"
 import {render} from "@react-email/components"
 import {ReactElement} from "react"
-// Unable to import mailgun.js like this.
-// import Mailgun from "mailgun.js"
 
 type InjectedDependencies = {
   logger: Logger
