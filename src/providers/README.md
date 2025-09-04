@@ -2,7 +2,7 @@
 
 You can create module providers, such as Notification or File Module Providers under a sub-directory of this directory. For example, `src/providers/my-notification`.
 
-Then, you register them in the Medusa application as `plugin-name/providers/my-notification`:
+Then, you register them in the Medusa application as `@webbers/mailgun-notification-medusa/providers/`:
 
 ```ts
 module.exports = defineConfig({
@@ -13,8 +13,8 @@ module.exports = defineConfig({
       options: {
         providers: [
           {
-            resolve: "@myorg/plugin-name/providers/my-notification",
-            id: "my-notification",
+            resolve: "@myorg/plugin-name/providers/notification-mailgun",
+            id: "mailgun",
             options: {
               channels: ["email"],
               // provider options...
