@@ -49,7 +49,7 @@
 - A [Mailgun](https://www.mailgun.com/) account and API key and domain
 
 > [!NOTE]
-> _If you use Mailgun's EU-hosted infrastructure, you need this url as the api_url: https://api.eu.mailgun.net _
+> _If you use Mailgun's EU-hosted infrastructure, you need this url as the api_url: https://api.eu.mailgun.net_
 
 ## Installation
 ```bash
