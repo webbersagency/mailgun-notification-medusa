@@ -62,10 +62,6 @@ module.exports = defineConfig({
   projectConfig: {
     // ...
   },
-  plugins: [
-    // ... other plugins
-    '@webbers/pay-payments-medusa'
-  ],
   modules: [
     // ... other modules
     {
@@ -167,10 +163,6 @@ module.exports = defineConfig({
   projectConfig: {
     // ...
   },
-  plugins: [
-    // ... other plugins
-    '@webbers/pay-payments-medusa'
-  ],
   modules: [
     // ... other modules
     {
