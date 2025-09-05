@@ -41,8 +41,6 @@
 - [Local Development and Customization](#local-development-and-customization)
 - [License](#license)
 
-## Features
-
 ## Prerequisites
 - Node.js v20 or higher
 - Medusa server v2.3.0 or higher
