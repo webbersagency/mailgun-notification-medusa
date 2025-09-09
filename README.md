@@ -17,7 +17,7 @@
 
 <p align="center">
   <a href="#">
-    <img src="https://img.shields.io/badge/license-TBD-blue.svg" />
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" />
   </a>
   <a href="#">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs welcome!" />
@@ -39,7 +39,6 @@
   - [Environment Variables](#environment-variables)
 - [Usage](#usage)
 - [Local Development and Customization](#local-development-and-customization)
-- [License](#license)
 
 ## Prerequisites
 - Node.js v20 or higher
@@ -200,6 +199,3 @@ module.exports = defineConfig({
 
 In case you want to customize and test the plugin locally, refer to
 the [Medusa Plugin docs](https://docs.medusajs.com/learn/fundamentals/plugins/create#3-publish-plugin-locally-for-development-and-testing).
-
-## License
-TBD
