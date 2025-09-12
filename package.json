@@ -73,6 +73,7 @@
     "@mikro-orm/migrations": "6.4.3",
     "@mikro-orm/postgresql": "6.4.3",
     "awilix": "^8.0.1",
+    "mailgun.js": "^12.0.3",
     "pg": "^8.16.0"
   },
   "engines": {
