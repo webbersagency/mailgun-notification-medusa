@@ -17,7 +17,7 @@
 
 <p align="center">
   <a href="#">
-    <img src="https://img.shields.io/badge/license-TBD-blue.svg" />
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" />
   </a>
   <a href="#">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs welcome!" />
@@ -39,9 +39,6 @@
   - [Environment Variables](#environment-variables)
 - [Usage](#usage)
 - [Local Development and Customization](#local-development-and-customization)
-- [License](#license)
-
-## Features
 
 ## Prerequisites
 - Node.js v20 or higher
@@ -49,7 +46,7 @@
 - A [Mailgun](https://www.mailgun.com/) account and API key and domain
 
 > [!NOTE]
-> _If you use Mailgun's EU-hosted infrastructure, you need this url as the api_url: https://api.eu.mailgun.net _
+> _If you use Mailgun's EU-hosted infrastructure, you need this url as the api_url: https://api.eu.mailgun.net_
 
 ## Installation
 ```bash
@@ -64,10 +61,6 @@ module.exports = defineConfig({
   projectConfig: {
     // ...
   },
-  plugins: [
-    // ... other plugins
-    '@webbers/pay-payments-medusa'
-  ],
   modules: [
     // ... other modules
     {
@@ -169,10 +162,6 @@ module.exports = defineConfig({
   projectConfig: {
     // ...
   },
-  plugins: [
-    // ... other plugins
-    '@webbers/pay-payments-medusa'
-  ],
   modules: [
     // ... other modules
     {
@@ -210,6 +199,3 @@ module.exports = defineConfig({
 
 In case you want to customize and test the plugin locally, refer to
 the [Medusa Plugin docs](https://docs.medusajs.com/learn/fundamentals/plugins/create#3-publish-plugin-locally-for-development-and-testing).
-
-## License
-TBD
