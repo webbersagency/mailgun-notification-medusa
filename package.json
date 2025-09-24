@@ -25,6 +25,7 @@
     "medusa-plugin-integration",
     "medusa-plugin-notification",
     "medusa",
+    "mailgun",
     "medusajs",
     "medusa-webbers"
   ],
