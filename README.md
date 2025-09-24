@@ -122,8 +122,8 @@ For example you could set it up like this:
 1. In the src directory of your medusa server create a directory called `emails`
 2. Inside the emails directory create a file called `order-placed.tsx`
 3. Inside the order-placed.tsx file add the following code:
-```typescript
-import * as React from "react";
+```typescript jsx
+import * as React from "react"
 import {
   Html,
   Head,
@@ -132,28 +132,29 @@ import {
   Container,
   Heading,
   Text,
-} from "@react-email/components";
+} from "@react-email/components"
 
 export const getOrderPlacedTemplate = () => (
   <Html>
-    <Head />
+    <Head/>
     <Preview>Your order is confirmed</Preview>
     <Body>
-     <Container>
-      <Heading>Thanks for your order!</Heading>
-      <Text>Order #12345 has been confirmed.</Text>
-      <Text>Total: $59.99</Text>
-     </Container>
+      <Container>
+        <Heading>Thanks for your order!</Heading>
+        <Text>Order #12345 has been confirmed.</Text>
+        <Text>Total: $59.99</Text>
+      </Container>
     </Body>
   </Html>
-);
+)
+
 export const orderPlacedSubject = (locale: string) => {
-switch (locale) {
-case "nl":
-return "Bestelling bevestigd"
-case "en":
-return "Order Confirmation"
-}
+  switch (locale) {
+    case "nl":
+      return "Bestelling bevestigd"
+    case "en":
+      return "Order Confirmation"
+  }
 }
 ```
 4. In the `medusa-config.ts` file add the following code:
