@@ -1,6 +1,6 @@
 {
   "name": "@webbers/mailgun-notification-medusa",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "displayName": "Medusa v2 Mailgun Notification Plugin",
   "description": "The Mailgun notification provider plugin for Medusa v2",
   "author": "Webbers B.V. <development@webbers.com>",
@@ -17,12 +17,12 @@
     "./*": "./.medusa/server/src/*.js"
   },
   "keywords": [
-    "medusa",
-    "plugin",
-    "medusa-plugin-other",
-    "medusa-plugin",
     "medusa-v2",
-    "medusa-plugin-notification"
+    "medusa-plugin-integration",
+    "medusa-plugin-notification",
+    "medusa",
+    "medusajs",
+    "medusa-webbers"
   ],
   "scripts": {
     "build": "medusa plugin:build",
