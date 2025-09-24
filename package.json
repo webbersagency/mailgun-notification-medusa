@@ -5,6 +5,10 @@
   "description": "The Mailgun notification provider plugin for Medusa v2",
   "author": "Webbers B.V. <development@webbers.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webbersagency/mailgun-notification-medusa"
+  },
   "files": [
     ".medusa/server"
   ],
