@@ -7,7 +7,6 @@ import {
   ProviderSendNotificationDTO,
   ProviderSendNotificationResultsDTO,
 } from "@medusajs/framework/types"
-import formData from "form-data"
 import {render} from "@react-email/components"
 import {ReactElement} from "react"
 
@@ -90,15 +89,19 @@ class MailgunNotificationProviderService extends AbstractNotificationProviderSer
     )
 
     try {
+      const attachments = notification?.attachments?.map(att => ({
+        data: Buffer.from(att.content, 'base64'),
+        filename: att.filename
+      }))
+
       return this.client_.messages.create(this.options_.domain, {
         from: notification.from?.trim() || this.options_.from_email?.trim(),
         subject,
         to: notification.to,
         html: renderedTemplate,
-        attachments: notification.attachments ?? undefined,
+        attachment: attachments,
       })
     } catch (e) {
-      console.log(e, "error")
       throw new MedusaError(
         MedusaError.Types.UNEXPECTED_STATE,
         `Error sending email with template ${notification.template}, to ${notification.to}: ${JSON.stringify(e)}`
@@ -108,7 +111,7 @@ class MailgunNotificationProviderService extends AbstractNotificationProviderSer
 
   private async initializeClient() {
     const Mailgun = (await import("mailgun.js")).default
-    const mailgun = new Mailgun(formData)
+    const mailgun = new Mailgun(globalThis.FormData)
     this.client_ = mailgun.client({
       username: "api",
       key: this.options_.apiKey,
