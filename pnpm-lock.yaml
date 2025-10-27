@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@medusajs/admin-shared':
+        specifier: ^2.11.1
+        version: 2.11.1
     devDependencies:
       '@medusajs/admin-sdk':
         specifier: ^2.11.1
