@@ -35,12 +35,12 @@
     "prepublishOnly": "medusa plugin:build"
   },
   "devDependencies": {
-    "@medusajs/admin-sdk": "^2.10.1",
-    "@medusajs/cli": "^2.10.1",
-    "@medusajs/framework": "^2.10.1",
-    "@medusajs/icons": "^2.10.1",
-    "@medusajs/medusa": "^2.10.1",
-    "@medusajs/test-utils": "^2.10.1",
+    "@medusajs/admin-sdk": "^2.11.1",
+    "@medusajs/cli": "^2.11.1",
+    "@medusajs/framework": "^2.11.1",
+    "@medusajs/icons": "^2.11.1",
+    "@medusajs/medusa": "^2.11.1",
+    "@medusajs/test-utils": "^2.11.1",
     "@medusajs/ui": "^4.0.14",
     "@swc/core": "1.5.7",
     "@types/node": "^20.19.1",
