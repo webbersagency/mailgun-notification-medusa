@@ -29,21 +29,6 @@ importers:
       '@medusajs/ui':
         specifier: ^4.0.14
         version: 4.0.21(@types/react-dom@18.3.7(@types/react@18.3.24))(@types/react@18.3.24)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.2)
-      '@mikro-orm/cli':
-        specifier: ^6.4.16
-        version: 6.5.2(pg@8.16.3)
-      '@mikro-orm/core':
-        specifier: ^6.4.16
-        version: 6.5.2
-      '@mikro-orm/knex':
-        specifier: ^6.4.16
-        version: 6.5.2(@mikro-orm/core@6.5.2)(pg@8.16.3)
-      '@mikro-orm/migrations':
-        specifier: ^6.4.16
-        version: 6.5.2(@mikro-orm/core@6.5.2)(@types/node@20.19.12)(pg@8.16.3)
-      '@mikro-orm/postgresql':
-        specifier: ^6.4.16
-        version: 6.5.2(@mikro-orm/core@6.5.2)
       '@react-email/components':
         specifier: 0.0.37
         version: 0.0.37(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -68,9 +53,6 @@ importers:
       mailgun.js:
         specifier: ^12.0.3
         version: 12.0.3
-      pg:
-        specifier: ^8.16.2
-        version: 8.16.3
       prop-types:
         specifier: ^15.8.1
         version: 15.8.1
